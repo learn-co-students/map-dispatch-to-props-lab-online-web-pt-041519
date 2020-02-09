@@ -62,6 +62,13 @@ const mapDispatchToProps = dispatch => {
       dispatch(action)
     }
   }
+
+  // SOLUTION FROM LEARN
+  return {
+    addRestaurant: (newRestaurant => {
+      dispatch(addRestaurant(newRestaurant))
+    })
+  }
 }
 
 
